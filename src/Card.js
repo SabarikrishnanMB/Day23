@@ -16,13 +16,13 @@ function Card ({cardData}) {
         {cardData.features.map((list)=>{
                     return (
                       <li className={!list.isEnable ?'text-muted':""}>
-                      <span className="fa-ul">                      
+                      <span className="fa-li">                      
                       {
                       list.isEnable ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faTimes}/>
                       }                                       
                       </span>
                       <span>
-                      &nbsp;&nbsp;&nbsp;{ list.isBold ? <strong>{list.name}</strong> : list.name }                        
+                      { list.isBold ? <strong>{list.name}</strong> : list.name }                        
                       </span>
                         
                      </li> 

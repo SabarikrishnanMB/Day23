@@ -132,7 +132,7 @@ function App() {
   ]
   return (
     <section className = "pricing py-5">
-    <div className="Container">
+    <div className="container">
     <div className="row">
     { data.map((item)=> {
             return <Card cardData={item}></Card>
